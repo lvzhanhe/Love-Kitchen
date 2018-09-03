@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.DetailActivity">
+
+        <ImageView
+            android:id="@+id/detail_image_view"
+            android:layout_width="240sp"
+            android:layout_height="320sp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:adjustViewBounds="true"
+            android:elevation="4dp"
+            android:scaleType="centerCrop"
+            android:transitionName="transition_photo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/detail_text"
+            android:layout_width="450dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="76dp"
+            app:layout_constraintStart_toEndOf="@+id/detail_image_view"
+            app:layout_constraintTop_toTopOf="@+id/detail_image_view">
+
+            <TextView
+                android:id="@+id/name_text_view"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="8dp"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="recipe title" />
+
+            <TextView
+                android:id="@+id/healthLabels_text_view"
+                android:layout_width="360dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="12dp"
+                android:textSize="17sp"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="@+id/name_text_view"
+                app:layout_constraintTop_toBottomOf="@+id/name_text_view"
+                tools:text="health labels health labels health labels health labels" />
+
+            <TextView
+                android:id="@+id/ingredientLines_text_view"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                app:layout_constraintStart_toStartOf="@+id/healthLabels_text_view"
+                app:layout_constraintTop_toBottomOf="@+id/healthLabels_text_view"
+                tools:text="ingredient Lines ingredient Lines ingredient Lines ingredient Lines" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintStart_toStartOf="@+id/detail_text"
+            app:layout_constraintTop_toBottomOf="@+id/detail_text">
+
+            <ru.katso.livebutton.LiveButton xmlns:livebutton="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/detail_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:elevation="4dp"
+                android:gravity="center"
+                android:paddingBottom="7dp"
+                android:paddingTop="7dp"
+                android:text="@string/detail_button"
+                android:textColor="#ffffff"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                livebutton:backgroundColor="#F57F76"
+                livebutton:corners="4dp"
+                livebutton:layout_constraintStart_toStartOf="parent"
+                livebutton:layout_constraintTop_toTopOf="parent"
+                livebutton:normalHeight="6dp"
+                livebutton:pressedHeight="2dp"
+                livebutton:shadowColor="#b16262" />
+
+            <ru.katso.livebutton.LiveButton xmlns:livebutton="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/favorite_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:elevation="4dp"
+                android:gravity="center"
+                android:paddingBottom="7dp"
+                android:paddingTop="7dp"
+                android:text="@string/collect_button"
+                android:textColor="#ffffff"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                livebutton:backgroundColor="#F57F76"
+                livebutton:corners="4dp"
+                livebutton:layout_constraintStart_toEndOf="@+id/detail_button"
+                livebutton:layout_constraintTop_toTopOf="@+id/detail_button"
+                livebutton:normalHeight="6dp"
+                livebutton:pressedHeight="2dp"
+                livebutton:shadowColor="#b16262" />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

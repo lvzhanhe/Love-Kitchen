@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Love Kitchen</string>
+    <string name="hello_world">Hello World!</string>
+    <string name="error_message">Oops, an error has occurred~</string>
+    <string name="ingredient_title">INGREDIENTS:</string>
+    <string name="nutrition_title">NUTRITION:</string>
+    <string name="add_success">Recipe added to your favorite list~</string>
+    <string name="add_fail">Recipe deleted from your favorite list~</string>
+    <string name="favorite_list">My Favorite Recipes</string>
+    <string name="open_settings">Settings</string>
+    <string name="search_hint">Search recipes you are interested in~&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="veg_title">Vegetarian</string>
+    <string name="egg_title">Egg</string>
+    <string name="gluten_title">Gluten</string>
+    <string name="peanut_title">Peanut</string>
+    <string name="list_title">Results</string>
+    <string name="pref_label_15" translatable="false">Showing 15 results</string>
+    <string name="pref_label_25" translatable="false">Showing 25 results</string>
+    <string name="pref_label_35" translatable="false">Showing 35 results</string>
+    <string name="pref_value_15" translatable="false">15</string>
+    <string name="pref_value_25" translatable="false">25</string>
+    <string name="pref_value_35" translatable="false">35</string>
+    <string name="search_button">&#160;&#160;&#160;Search&#160;&#160;&#160;</string>
+    <string name="detail_button">&#160;&#160;See Details&#160;&#160;</string>
+    <string name="collect_button">&#160;&#160;Collect&#160;&#160;</string>
+</resources>
